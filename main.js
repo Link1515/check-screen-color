@@ -12,7 +12,7 @@ dragBar.addEventListener('mousedown', () => {
 
 document.addEventListener('mousemove', e => {
   if (!isDragging) return;
-  let newLeftPercent = (e.clientX / window.innerWidth) * 100;
+  let newLeftPercent = ((e.clientX + 8) / window.innerWidth) * 100;
   newLeftPercent = Math.max(5, newLeftPercent);
   newLeftPercent = Math.min(newLeftPercent, 95);
 

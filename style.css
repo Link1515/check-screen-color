@@ -34,16 +34,18 @@ button {
   height: 100%;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
   cursor: e-resize;
-  width: 8px;
+  width: 18px;
   user-select: none;
+  display: grid;
+  place-items: center;
 }
 
 .drag-bar-light {
   height: 100%;
   width: 3px;
-  margin: auto;
 }
 
 .toggle-highlight-btn {
