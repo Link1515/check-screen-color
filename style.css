@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+}
+
+.color-group {
+  display: flex;
+  position: relative;
+}
+
+.color {
+  height: 200px;
+}
+
+.color-left {
+  width: 50%;
+}
+
+.color-right {
+  flex-grow: 1;
+}
+
+.drag-bar {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  z-index: 999;
+  cursor: e-resize;
+  width: 8px;
+  user-select: none;
+}
+
+.drag-bar-light {
+  height: 100%;
+  width: 3px;
+  margin: auto;
+}
+
+.toggle-highlight-btn {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: white;
+  border-radius: 50%;
+}
